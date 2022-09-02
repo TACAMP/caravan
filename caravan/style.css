@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,15 +9,31 @@ a{
  text-decoration:none;
 }
 
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header{
   width:90%;
   padding:15px 0;
   margin:0 auto;
   text-align:center;
+  position:relative;
 }
 
 header .heading{
   font-size:32px;
+}
+
+.social i{
+  display:inline-block;
+  margin-left:20px;
+}
+
+.social{
+  position:absolute;
+  top:22px;
+  right:22px;
 }
 
 .nav-list{
@@ -204,4 +220,74 @@ footer{
 
 .footer-text{
   color:#fff;
+}
+
+@media screen and (max-width:425px){
+header{
+  width:100%;
+}
+
+.social{
+  display:none;
+}
+
+.nav-list{
+  100%
+}
+
+.nav-list-item{
+  display:block;
+  line-height:2;
+}
+
+.main-visual-content{
+  width:100%;
+}
+main{
+  width:100%;
+  display:block;
+}
+
+.blog{
+  width:100%;
+  margin:0;
+}
+
+.blog-item{
+  padding:0 0 20px 10px;
+}
+
+.blog-image{
+  width:180px;
+  height:180px;
+}
+
+.blog-image{
+  width:49%;
+}
+
+.blog-date{
+  font-size:15px;
+}
+
+.category{
+  display:none;
+}
+
+.pagination{
+  padding:50px 0;
+}
+
+.sidebar{
+  width:100%;
+}
+
+.sidebar-contents{
+  padding:50px 5px;
+}
+
+.instagram-box{
+  width:197px;
+  height:197px;
+  margin:0 10px 10px 0;
 }
